@@ -1,0 +1,195 @@
+/* Reset CSS */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+  }
+  
+  header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #000; /* Zwarte achtergrond voor goed contrast */
+    color: #FFF; /* Witte tekst voor goed contrast */
+  }
+  
+  header a {
+    color: white;
+    text-decoration: none;
+    margin-left: 20px;
+    font-size: 18px;
+  }
+  
+  header a:focus,
+  button:focus {
+    outline: 3px solid #FFA500; /* Duidelijke focus stijl voor toetsenbordnavigatie */
+  }
+  
+  .hamburger {
+    display: none;
+    font-size: 30px;
+    cursor: pointer;
+    background: none;
+    border: none;
+    color: white;
+  }
+  
+  .sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    top: 0;
+    right: 0;
+    background-color: black;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+  }
+  
+  .sidenav.active {
+    width: 250px;
+  }
+  
+  .sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: white;
+    display: block;
+    transition: 0.3s;
+  }
+  
+  .sidenav a:focus {
+    outline: 3px solid #FFA500; /* Focus voor navigatie in sidenav */
+  }
+  
+  .sidenav a:hover {
+    color: #f1f1f1;
+  }
+  
+  .sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+  }
+  
+  main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .hero {
+    text-align: center;
+    margin: 50px 0;
+  }
+  
+  .hero h1 {
+    font-size: 30px;
+    font-weight: normal;
+    color: gray;
+  }
+  
+  .hero h2 {
+    font-size: 40px;
+    font-weight: bold;
+    margin-top: 10px;
+  }
+  
+  .content {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    max-width: 1050px;
+  }
+  
+  .image-container {
+    flex: 1;
+    text-align: center;
+  }
+  
+  .image-container img {
+    max-width: 100%;
+    height: auto;
+  }
+  
+  .text-container {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  
+  .text-container h3 {
+    font-size: 24px;
+  }
+  
+  .text-container p {
+    line-height: 1.6;
+  }
+  
+  
+  form input[type="email"] {
+    padding: 10px;
+    font-size: 16px;
+    width: 80%;
+    margin-right: 10px;
+  }
+  
+  form button {
+    padding: 10px;
+    font-size: 16px;
+    background-color: gray;
+    color: white;
+    border: none;
+    cursor: pointer;
+  }
+  
+  form input[type="email"]:focus,
+  form button:focus {
+    outline: 3px solid #FFA500;
+  }
+  
+  /* Mobile responsive */
+  @media (max-width: 768px) {
+    .hamburger {
+      display: block;
+    }
+  
+    .desktop-nav {
+      display: none;
+    }
+  
+    .content {
+      flex-direction: column;
+      padding: 20px;
+    }
+  
+    .text-container {
+      padding: 0;
+      text-align: center;
+    }
+  
+    form input[type="email"] {
+      width: 100%;
+      margin-bottom: 10px;
+    }
+  
+    form button {
+      width: 100%;
+    }
+  }
+  
+  @media (min-width: 769px) {
+    .sidenav {
+      display: none;
+    }
+  }
+  

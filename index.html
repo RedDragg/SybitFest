@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>eBIKe - The Electric Bike of the Future</title>
+  <link rel="stylesheet" href="styles/styles.css">
+</head>
+<body>
+  <!-- Hoofdstructuur van de pagina -->
+  <header>
+    <div class="logo">
+      <a href="#" aria-label="Homepagina van eBIKe">Your logo</a>
+    </div>
+    <nav aria-label="Hoofd navigatie" class="desktop-nav">
+      <a href="#" aria-label="Meer informatie over ons">About</a>
+      <a href="#" aria-label="Meer informatie over ons">About</a>
+      <a href="#" aria-label="Meer informatie over ons">About</a>
+      <a href="#" aria-label="Contact met ons opnemen">Contact</a>
+    </nav>
+    <button class="hamburger" aria-label="Open navigatiemenu" onclick="toggleNav()">&#9776;</button>
+  </header>
+
+  <!-- Sidenav -->
+  <div id="mySidenav" class="sidenav" role="navigation" aria-label="Mobiele navigatie">
+    <button aria-label="Sluit navigatiemenu" class="closebtn" onclick="toggleNav()">&times;</button>
+    <a href="#" aria-label="Meer informatie over ons">About</a>
+    <a href="#" aria-label="Meer informatie over ons">About</a>
+    <a href="#" aria-label="Meer informatie over ons">About</a>
+    <a href="#" aria-label="Contact met ons opnemen">Contact</a>
+  </div>
+
+  <!-- Hoofdinhoud van de pagina -->
+  <main>
+    <section class="hero" aria-labelledby="main-title">
+      <h1 id="main-title">Introducing eBIKe</h1>
+      <h2>THE ELECTRIC BIKE OF THE FUTURE</h2>
+    </section>
+
+    <section class="content" aria-labelledby="content-title">
+      <div class="image-container">
+        <img src="images/Frame 112.png" alt="Zwarte eBIKe elektrische fiets" role="img" aria-labelledby="content-title">
+      </div>
+      <div class="text-container">
+        <h3 id="content-title">eBIKe is the Best Electric Bike for Commuting and Recreation</h3>
+        <p>The eBIKe is the perfect electric bike for commuting and recreation. It's lightweight and easy to ride, making it perfect for city streets and trails. With a long battery life, you can ride all day without having to worry about running out of power.</p>
+        <form aria-label="Abonneer op onze nieuwsbrief">
+          <input type="email" id="email" placeholder="Email" aria-required="true">
+          <button type="submit" aria-label="Abonneren op nieuwsbrief">Subscribe</button>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <!-- JavaScript voor navigatie -->
+  <script>
+    function toggleNav() {
+      document.getElementById("mySidenav").classList.toggle("active");
+    }
+  </script>
+</body>
+</html>
